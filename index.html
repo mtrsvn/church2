@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Simple Frontend</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      background: #111;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(to right, #00bcd4, #2196f3);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #fff;
+      color: #2196f3;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Sections */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    /* Features */
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Contact */
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      background: #2196f3;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0b7dda;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>MyWebsite</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h2>Welcome to My Frontend</h2>
+    <p>Simple HTML, CSS website template for beginners</p>
+    <a href="#features" class="btn">Explore</a>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About</h2>
+    <p>This is a simple frontend layout built using only HTML and CSS. Perfect for practice and learning web development basics.</p>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Fast</h3>
+        <p>Lightweight and fast loading design.</p>
+      </div>
+      <div class="card">
+        <h3>Responsive</h3>
+        <p>Works on mobile, tablet, and desktop.</p>
+      </div>
+      <div class="card">
+        <h3>Simple</h3>
+        <p>Easy to understand and modify.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 My Simple Frontend. Built by Mater 🚀</p>
+  </footer>
+
+</body>
+</html>
